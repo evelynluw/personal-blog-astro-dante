@@ -37,6 +37,8 @@ export type SiteConfig = {
     projectsPerPage?: number;
 };
 
+const basePath = '/personal-blog-astro-dante'
+
 const siteConfig: SiteConfig = {
     title: 'Dante',
     subtitle: 'Minimal Astro.js theme',
@@ -48,33 +50,33 @@ const siteConfig: SiteConfig = {
     headerNavLinks: [
         {
             text: 'Home',
-            href: '/'
+            href: basePath + '/'
         },
         {
             text: 'Projects',
-            href: '/projects'
+            href: basePath + '/projects'
         },
         {
             text: 'Blog',
-            href: '/blog'
+            href: basePath + '/blog'
         },
         {
             text: 'Tags',
-            href: '/tags'
+            href: basePath + '/tags'
         }
     ],
     footerNavLinks: [
         {
             text: 'About',
-            href: '/about'
+            href: basePath + '/about'
         },
         {
             text: 'Contact',
-            href: '/contact'
+            href: basePath + '/contact'
         },
         {
             text: 'Terms',
-            href: '/terms'
+            href: basePath + '/terms'
         },
         {
             text: 'Download theme',
@@ -105,7 +107,7 @@ const siteConfig: SiteConfig = {
         actions: [
             {
                 text: 'Get in Touch',
-                href: '/contact'
+                href: basePath + '/contact'
             }
         ]
     },
