@@ -44,8 +44,8 @@ const siteConfig: SiteConfig = {
     subtitle: "Develop & Create",
     description: 'Evelyn\'s site',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '/PLACEHOLDER.jpg',
+        alt: 'PLACEHOLDER'
     },
     headerNavLinks: [
         {

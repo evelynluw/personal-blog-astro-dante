@@ -35,6 +35,8 @@ const { Content } = await render(project);
     </article>
     {
         (prevProject || nextProject) && (
+            <!-- TODO: fix the color of the <hr> block --!>
+            <hr class="prose lg:prose-xl">
             <div class="my-16 sm:my-24">
                 <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">View Next</h2>
                 {nextProject && <ProjectPreview project={nextProject} class="mb-10 sm:mb-12" headingLevel="h3" />}
