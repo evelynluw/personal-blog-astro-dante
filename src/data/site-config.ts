@@ -84,20 +84,16 @@ const siteConfig: SiteConfig = {
         }
     ],
     socialLinks: [
-        {
-            text: 'Linkedin',
-            href: 'https://linkedin.com/'
-        },
-        {
-            text: 'Bluesky',
-            href: 'https://bluesky.com/'
-        }
+        // {
+        //     text: 'Linkedin',
+        //     href: 'https://linkedin.com/'
+        // },
     ],
     hero: {
         title: 'Hello,',
         text: "I'm **Evelyn**. I write code, I play music and bring small songs to open mics, I like traveling & photography. Feel free to explore some of my coding endeavors on <a href='https://github.com/evelynluw'>GitHub</a>. Let's all try to make the world a better place.",
         image: {
-            src: '/replace-this.jpeg',
+            src: '/hero-scenery-pic.jpg',
             alt: 'Scenery picture'
         },
         actions: [
