@@ -1,6 +1,6 @@
-@import '@fontsource-variable/inter';
-@import '@fontsource-variable/newsreader';
-@import '@fontsource-variable/newsreader/wght-italic.css';
+@import '@fontsource-variable/hepta-slab';
+@import '@fontsource-variable/public-sans';
+@import '@fontsource-variable/roboto-serif';
 
 @tailwind base;
 @tailwind components;
