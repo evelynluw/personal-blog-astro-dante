@@ -1,3 +1,4 @@
+// Tailwind v3 config
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -5,8 +6,8 @@ module.exports = {
     darkMode: 'class',
     theme: {
         fontFamily: {
-            sans: ['Inter Variable', ...defaultTheme.fontFamily.sans],
-            serif: ['Newsreader Variable', ...defaultTheme.fontFamily.serif]
+            sans: ['Public Sans Variable', ...defaultTheme.fontFamily.sans],
+            serif: ['Roboto Serif Variable', ...defaultTheme.fontFamily.serif]
         },
         extend: {
             textColor: {
@@ -19,7 +20,7 @@ module.exports = {
             borderColor: {
                 main: 'rgb(var(--color-border-main) / <alpha-value>)'
             },
-            typography: (theme) => ({
+            typography: ({ theme }) => ({
                 dante: {
                     css: {
                         '--tw-prose-body': theme('textColor.main / 100%'),
@@ -53,13 +54,15 @@ module.exports = {
                             }
                         },
                         'h1,h2,h3,h4,h5,h6': {
-                            fontFamily: theme('fontFamily.serif'),
-                            fontWeight: 500
+                            fontFamily: [theme('fontFamily.serif')[0]],
+                            fontWeight: 450,
+                            fontVariationSettings: '"wdth" 90'
                         },
                         blockquote: {
                             border: 0,
-                            fontFamily: theme('fontFamily.serif'),
-                            fontSize: '1.3125em',
+                            fontFamily: [theme('fontFamily.serif')[0]],
+                            fontStretch: '80%',
+                            fontSize: '1.3em', // this is not correctly applied for some reason 
                             fontStyle: 'italic',
                             fontWeight: 'normal',
                             lineHeight: 1.4,

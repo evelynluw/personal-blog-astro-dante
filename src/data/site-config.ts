@@ -40,7 +40,7 @@ export type SiteConfig = {
 const basePath = ''
 
 const siteConfig: SiteConfig = {
-    title: 'Evelyn\'s site',
+    title: 'Evelyn\'s Site',
     subtitle: "Develop & Create",
     description: 'Evelyn\'s site',
     image: {
